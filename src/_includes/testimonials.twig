@@ -63,7 +63,7 @@
 			{% for testimonial in testimonials %}
 				<div class="flex items-start gap-6">
 					<img
-						class="rounded-full"
+						class="rounded-full hidden sm:block"
 						alt="{{ testimonial.name }}"
 						src="{{ testimonial.image }}"
 						width="80" height="80"
@@ -73,10 +73,19 @@
 						<p class="text-lg text-gray-600 dark:text-gray-200">
 							“{{ testimonial.quote }}”
 						</p>
-						<p class="mt-3 flex flex-col dark:text-white">
-							<span class="text-lg font-bold">{{ testimonial.name }}</span>
-							<span class="text-gray-500 dark:text-gray-400 text-base">{{ testimonial.position }}</span>
-						</p>
+						<div class="mt-5 flex items-center sm:flex-col sm:items-start gap-4 dark:text-white">
+							<img
+								class="rounded-full size-16 sm:hidden"
+								alt="{{ testimonial.name }}"
+								src="{{ testimonial.image }}"
+								width="80" height="80"
+								loading="lazy"
+							>
+							<p class="flex flex-col">
+								<span class="text-lg font-bold">{{ testimonial.name }}</span>
+								<span class="text-gray-500 dark:text-gray-400 text-base">{{ testimonial.position }}</span>
+							</p>
+						</div>
 					</div>
 				</div>
 			{% endfor %}
