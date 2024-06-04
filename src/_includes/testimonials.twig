@@ -1,6 +1,14 @@
 {% set us = [
-	{ name: 'Matt', image: 'https://0.gravatar.com/avatar/78b1ddba0375ac08914ce5fec89b33d78901d8105554b4fbd7a66f9e8e9b6e9f?size=180' },
-	{ name: 'Aaron', image: 'https://1.gravatar.com/avatar/25e592ada8d06f4018d32c81a8eb5fb3d5595344fe122a91564bebf867a630c1?size=180' },
+	{
+    name: 'Matt',
+    url: 'https://mattwaler.com',
+    image: 'https://0.gravatar.com/avatar/78b1ddba0375ac08914ce5fec89b33d78901d8105554b4fbd7a66f9e8e9b6e9f?size=180'
+  },
+	{
+    name: 'Aaron',
+    url: 'https://aaronmbushnell.com/',
+    image: 'https://1.gravatar.com/avatar/25e592ada8d06f4018d32c81a8eb5fb3d5595344fe122a91564bebf867a630c1?size=180'
+  },
 ] %}
 
 {% set testimonials = [
@@ -8,23 +16,27 @@
 		name: 'Kristina Orzech',
 		position: 'Digital Marketing Project Manager',
 		image: '/images/kristina-orzech.jpg',
+    url: 'https://www.linkedin.com/in/kristinaorzech/',
 		quote: "I’ve partnered with Aaron and Matt as a digital project manager for several years and they have always been wonderful to work with. Their willingness to jump into a project without hesitation, ask questions, and keep a positive outlook during the process is unmatchable when it comes to managing these sometimes complex digital projects. I would definitely recommend bringing your next project to them for discussion."
 	},
 	{
 		name: 'Ann Blessman',
 		position: 'Producer',
 		image: '/images/ann-blessman.jpg',
+    url: 'https://www.linkedin.com/in/ann-blessman/',
 		quote: "Matt and Aaron are two of the most talented individuals I’ve ever had the pleasure of working with. Their patience, dependability, and strategic thinking made even the most technically complex projects an absolute breeze. They’re beyond gifted at what they do, and every opportunity I’ve had to work with them has not only been beyond successful for the client, but educational for me as a colleague."
 	},
 	{
 		name: 'Tori Ritter',
 		position: 'Senior Healthcare Marketing Specialist',
+    url: 'https://www.linkedin.com/in/tori-ritter-047370b1/',
 		image: '/images/tori-ritter.jpg',
 		quote: "My testimonial is still in progress."
 	},
 	{
 		name: 'Mariam Aziz',
 		position: 'Senior Designer',
+    url: 'https://www.linkedin.com/in/mariamdesignme/',
 		image: '/images/mariam-aziz.jpg',
 		quote: "Matt and Aaron always do a wonderful job bringing my websites to life. It's a straightforward and stress-free process from design to development with great attention to detail. They make sure everything is responsive and functions without errors. Their thought process is problem-solving and user experience first, which helps create dynamic products."
 	},
@@ -33,7 +45,7 @@
 <section class="spacer container">
 	<div class="flex items-center justify-center mb-10">
 		{% for row in us %}
-			<div class="relative">
+			<a href="{{ url }}" target="_blank" class="relative transition-transform hover:-translate-y-2">
 				<div class="
 					absolute
 					{{ loop.first ? 'top-0 left-0 -translate-x-[90%]' : 'bottom-0 right-0 translate-x-[70%]' }}
@@ -49,7 +61,7 @@
 					alt="{{ row.name }}"
 					class="border-4 border-white rounded-full size-24 {{ not loop.first ? '-translate-x-4' }}"
 				>
-			</div>
+			</a>
 		{% endfor %}
 	</div>
 
@@ -62,13 +74,15 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
 			{% for testimonial in testimonials %}
 				<div class="flex items-start gap-6">
-					<img
-						class="rounded-full hidden sm:block"
-						alt="{{ testimonial.name }}"
-						src="{{ testimonial.image }}"
-						width="80" height="80"
-						loading="lazy"
-					>
+					<a href="{{ testimonial.url }}" target="_blank" class="hover:-translate-y-2 transition-transform">
+            <img
+              class="rounded-full hidden sm:block"
+              alt="{{ testimonial.name }}"
+              src="{{ testimonial.image }}"
+              width="80" height="80"
+              loading="lazy"
+            >
+          </a>
 					<div class="flex-1">
 						<p class="text-lg text-gray-600 dark:text-gray-200">
 							“{{ testimonial.quote }}”
