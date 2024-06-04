@@ -37,8 +37,8 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12 md:mt-16">
       {% for feature in features %}
         <div class="
-          bg-white shadow-xl shadow-gray-200/50 dark:shadow-black/10
-          border border-gray-100 dark:border-none
+          bg-white dark:bg-navy/20 shadow-xl shadow-gray-200/50 dark:shadow-black/10
+          border border-gray-100 dark:border-navy
           rounded-lg py-12 px-7
           {{ loop.index % 2 == 0 ? '-rotate-2' : 'rotate-2' }}
           transition-transform duration-300 hover:rotate-0
@@ -46,7 +46,12 @@
         ">
           <div class="text-center flex flex-col gap-3">
             <span class="text-5xl lg:text-6xl">{{ feature.icon }}</span>
-            <p class="text-xl text-balance text-gray-500 [&_strong]:text-gray-700 [&_a]:underline [&_a]:text-gray-700 [&_a]:font-bold">
+            <p class="
+              text-xl text-balance
+              text-gray-500 dark:text-gray-300
+              [&_strong]:text-gray-700 [&_strong]:dark:text-white
+              [&_a]:underline [&_a]:text-gray-700 [&_a]:dark:text-white [&_a]:font-bold
+            ">
               {{ feature.text }}
             </p>
           </div>
