@@ -8,7 +8,7 @@
 		name: 'Kristina Orzech',
 		position: 'Digital Marketing Project Manager',
 		image: '/images/kristina-orzech.jpg',
-		quote: "I’ve partnered with Aaron and Matt as a digital project manager for several years and they have always been wonderful to work with. They each bring a well-rounded set of skills in web design and development to the table, making them able to understand and articulate client needs quickly and efficiently. Their willingness to jump into a project without hesitation, ask questions, and keep a positive outlook during the process is unmatchable when it comes to managing these sometimes complex digital projects. I would definitely recommend bringing your next project to them for discussion."
+		quote: "I’ve partnered with Aaron and Matt as a digital project manager for several years and they have always been wonderful to work with. Their willingness to jump into a project without hesitation, ask questions, and keep a positive outlook during the process is unmatchable when it comes to managing these sometimes complex digital projects. I would definitely recommend bringing your next project to them for discussion."
 	},
 	{
 		name: 'Ann Blessman',
@@ -30,7 +30,7 @@
 	},
 ] %}
 
-<section class="container-md spacer">
+<section class="spacer container">
 	<div class="flex items-center justify-center mb-10">
 		{% for row in us %}
 			<div class="relative">
@@ -70,7 +70,9 @@
 						loading="lazy"
 					>
 					<div class="flex-1">
-						<p class="text-xl text-gray-600 dark:text-gray-200 line-clamp-6">{{ testimonial.quote }}</p>
+						<p class="text-lg text-gray-600 dark:text-gray-200">
+							“{{ testimonial.quote }}”
+						</p>
 						<p class="mt-3 flex flex-col dark:text-white">
 							<span class="text-lg font-bold">{{ testimonial.name }}</span>
 							<span class="text-gray-500 dark:text-gray-400 text-base">{{ testimonial.position }}</span>
