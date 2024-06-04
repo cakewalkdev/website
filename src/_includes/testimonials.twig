@@ -74,9 +74,9 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
 			{% for testimonial in testimonials %}
 				<div class="flex items-start gap-6">
-					<a href="{{ testimonial.url }}" target="_blank" class="hover:-translate-y-2 transition-transform">
+					<a href="{{ testimonial.url }}" target="_blank" class="hover:-translate-y-2 transition-transform hidden sm:block">
             <img
-              class="rounded-full hidden sm:block"
+              class="rounded-full"
               alt="{{ testimonial.name }}"
               src="{{ testimonial.image }}"
               width="80" height="80"
