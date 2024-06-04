@@ -1,1 +1,19 @@
-/* Custom Components Go Here. */
+/* Components go here */
+
+@layer components {
+	.container-md {
+		@apply container lg:max-w-screen-lg;
+	}
+
+	.button {
+		@apply font-semibold rounded-full;
+		@apply bg-navy hover:bg-green text-white hover:text-navy;
+		@apply dark:bg-green dark:text-navy hover:dark:bg-white;
+		@apply inline-flex items-center gap-4 px-8 py-4;
+	}
+
+	.input {
+		@apply rounded bg-white shadow w-full;
+		@apply border-0 ring-1 ring-zinc-950/10 focus:ring-zinc-950/30;
+	}
+}
