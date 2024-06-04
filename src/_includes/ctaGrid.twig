@@ -1,22 +1,22 @@
 {% set features = [
   {
-    icon: "📦",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
+    icon: "📝",
+    text: "Need a content management system? That's our bread and butter! We love <a href='#'>Statamic</a> and we think you'll love it, too.",
   },
   {
-    icon: "📦",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
+    icon: "⭐️",
+    text: "We'll handle <strong>hosting</strong>, <strong>updates</strong>, and <strong>routine maintenance</strong> on your behalf. That allows you to focus on your business.",
   },
   {
-    icon: "📦",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
+    icon: "🧘",
+    text: "We bill using transparent pricing to simplify your life. We have <strong>half-day</strong> and <strong>full-day</strong> rates. Easy as that!",
   },
   {
-    icon: "📦",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
+    icon: "🏗️",
+    text: "Need something <strong>custom</strong>? A job board, calendar, directory? We can create specifically-tailored integrations for your business.",
   },
   {
-    icon: "📦",
+    icon: "🔍",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
   },
   {
@@ -39,14 +39,16 @@
         <div class="
           bg-white shadow-xl shadow-gray-200/50 dark:shadow-black/10
           border border-gray-100 dark:border-none
-          rounded-lg py-12 px-8
+          rounded-lg py-12 px-7
           {{ loop.index % 2 == 0 ? '-rotate-2' : 'rotate-2' }}
           transition-transform duration-300 hover:rotate-0
           flex items-center justify-center
         ">
           <div class="text-center flex flex-col gap-3">
             <span class="text-5xl lg:text-6xl">{{ feature.icon }}</span>
-            <p class="text-xl lg:text-2xl text-balance text-gray-500">{{ feature.text }}</p>
+            <p class="text-xl text-balance text-gray-500 [&_strong]:text-gray-700 [&_a]:underline [&_a]:text-gray-700 [&_a]:font-bold">
+              {{ feature.text }}
+            </p>
           </div>
         </div>
       {% endfor %}
