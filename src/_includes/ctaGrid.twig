@@ -45,16 +45,16 @@
         <div class="
           bg-white dark:bg-navy/30 shadow-xl shadow-gray-200/50 dark:shadow-black/10
           border border-gray-100 dark:border-navy
-          rounded-lg py-12 px-6
+          rounded-lg py-12 px-10 md:px-6
           {{ loop.index % 2 == 0 ? '-rotate-2' : 'rotate-2' }}
           transition-transform duration-300 hover:rotate-0
           flex items-center justify-center
         ">
           <div class="text-center flex flex-col">
             <span class="text-5xl lg:text-6xl">{{ feature.icon }}</span>
-            <h4 class="h5 mt-5 mb-1">{{ feature.title }}</h3>
+            <h4 class="dark:text-white h4 mt-6 mb-2">{{ feature.title }}</h3>
             <p class="
-              text-lg text-pretty
+              md:text-lg text-pretty
               text-gray-500 dark:text-gray-300
               [&_strong]:text-gray-700 [&_strong]:dark:text-white
               [&_a]:underline [&_a]:text-gray-700 [&_a]:dark:text-white [&_a]:font-bold
