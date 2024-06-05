@@ -45,7 +45,7 @@
 <section class="spacer container">
 	<div class="flex items-center justify-center mb-10">
 		{% for row in us %}
-			<a href="{{ url }}" target="_blank" class="relative transition-transform hover:-translate-y-2">
+			<a href="{{ row.url }}" target="_blank" class="relative transition-transform hover:-translate-y-2">
 				<div class="
 					absolute
 					{{ loop.first ? 'top-0 left-0 -translate-x-[90%]' : 'bottom-0 right-0 translate-x-[70%]' }}
