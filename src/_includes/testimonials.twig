@@ -17,14 +17,14 @@
 		position: 'Digital Marketing Project Manager',
 		image: '/images/kristina-orzech.jpg',
     url: 'https://www.linkedin.com/in/kristinaorzech/',
-		quote: "I’ve partnered with Aaron and Matt as a digital project manager for several years and they have always been wonderful to work with. Their willingness to jump into a project without hesitation, ask questions, and keep a positive outlook during the process is unmatchable when it comes to managing these sometimes complex digital projects. I would definitely recommend bringing your next project to them for discussion."
+		quote: "Their willingness to jump into a project <strong>without hesitation, ask questions, and keep a positive outlook</strong> during the process is unmatchable when it comes to managing these sometimes complex digital projects."
 	},
 	{
 		name: 'Ann Blessman',
 		position: 'Producer',
 		image: '/images/ann-blessman.jpg',
     url: 'https://www.linkedin.com/in/ann-blessman/',
-		quote: "Matt and Aaron are two of the most talented individuals I’ve ever had the pleasure of working with. Their patience, dependability, and strategic thinking made even the most technically complex projects an absolute breeze. They’re beyond gifted at what they do, and every opportunity I’ve had to work with them has not only been beyond successful for the client, but educational for me as a colleague."
+		quote: "Matt and Aaron are two of the most talented individuals I’ve ever had the pleasure of working with. Their <strong>patience, dependability, and strategic thinking</strong> made even the most technically complex projects an absolute breeze."
 	},
 	{
 		name: 'Tori Ritter',
@@ -38,7 +38,7 @@
 		position: 'Senior Designer',
     url: 'https://www.linkedin.com/in/mariamdesignme/',
 		image: '/images/mariam-aziz.jpg',
-		quote: "Matt and Aaron always do a wonderful job bringing my websites to life. It's a straightforward and stress-free process from design to development with great attention to detail. They make sure everything is responsive and functions without errors. Their thought process is problem-solving and user experience first, which helps create dynamic products."
+		quote: "Matt and Aaron always do a wonderful job bringing my websites to life. Their thought process is <strong>problem-solving and user experience first</strong>, which helps create dynamic products."
 	},
 ] %}
 
@@ -67,11 +67,11 @@
 
 	<h2 class="h1 text-balance text-center dark:text-white">Who is Cakewalk?</h2>
 	<h3 class="h3 highlighted text-center dark:text-white mt-3">
-  Experts with <em>30+ years</em> of experience.
+		Experts with <em>30+ years</em> of experience.
 	</h3>
 
 	<div class="pt-12 lg:pt-24">
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 			{% for testimonial in testimonials %}
 				<div class="flex items-start gap-6">
 					<a href="{{ testimonial.url }}" target="_blank" class="hover:-translate-y-2 transition-transform hidden sm:block">
@@ -84,10 +84,10 @@
             >
           </a>
 					<div class="flex-1">
-						<p class="text-lg text-gray-600 dark:text-gray-200">
+						<p class="text-lg text-gray-600 dark:text-gray-200 [&_strong]:text-gray-800 [&_strong]:font-semibold [&_strong]:dark:text-white">
 							“{{ testimonial.quote }}”
 						</p>
-						<div class="mt-5 flex items-center sm:flex-col sm:items-start gap-4 dark:text-white">
+						<div class="mt-4 flex items-center sm:flex-col sm:items-start gap-4 dark:text-white">
 							<img
 								class="rounded-full size-16 sm:hidden"
 								alt="{{ testimonial.name }}"
@@ -95,9 +95,9 @@
 								width="80" height="80"
 								loading="lazy"
 							>
-							<p class="flex flex-col">
+							<p class="flex flex-col gap-0.5">
 								<span class="text-lg font-bold">{{ testimonial.name }}</span>
-								<span class="text-gray-500 dark:text-gray-400 text-base">{{ testimonial.position }}</span>
+								<span class="text-sm text-gray-500 dark:text-gray-400">{{ testimonial.position }}</span>
 							</p>
 						</div>
 					</div>
