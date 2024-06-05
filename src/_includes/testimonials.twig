@@ -45,7 +45,7 @@
 <section class="spacer container">
 	<div class="flex items-center justify-center mb-10">
 		{% for row in us %}
-			<a href="{{ row.url }}" target="_blank" class="relative transition-transform hover:-translate-y-2">
+			<a href="{{ row.url }}" target="_blank" class="relative group">
 				<div class="
 					absolute
 					{{ loop.first ? 'top-0 left-0 -translate-x-[90%]' : 'bottom-0 right-0 translate-x-[70%]' }}
@@ -59,7 +59,7 @@
 					loading="lazy"
 					src="{{ row.image }}"
 					alt="{{ row.name }}"
-					class="border-4 border-white rounded-full size-24 {{ not loop.first ? '-translate-x-4' }}"
+					class="transition-transform group-hover:-translate-y-2 border-4 border-white rounded-full size-24 {{ not loop.first ? '-translate-x-4' }}"
 				>
 			</a>
 		{% endfor %}
