@@ -1,34 +1,40 @@
 {% set features = [
   {
     icon: "📝",
+    title: "CMS-driven Sites",
     text: "Need a content management system? That's our bread and butter! We love <a href='#'>Statamic</a> and we think you'll love it, too.",
   },
   {
-    icon: "⭐️",
-    text: "We'll handle <strong>hosting</strong>, <strong>updates</strong>, and <strong>routine maintenance</strong> on your behalf. That allows you to focus on your business.",
+    icon: "📨",
+    title: "Static Sites",
+    text: "Want a great-looking site, but prefer to <strong>email your changes</strong>? No shame in that! We like to keep things breezy.",
   },
   {
     icon: "🧘",
-    text: "We bill using transparent pricing to simplify your life. We have <strong>half-day</strong> and <strong>full-day</strong> rates. Easy as that!",
+    title: "Simple Prices",
+    text: "We use <strong>half-day</strong> and <strong>full-day</strong> billing rates. Transparent pricing makes things easy for you&mdash;and us!",
+  },
+  {
+    icon: "🛠️",
+    title: "Custom Integrations",
+    text: "Need something <strong>uniquely tailored</strong>? A calendar, job board, directory, or something else? Chances are we've built it!",
   },
   {
     icon: "🏗️",
-    text: "Need something <strong>custom</strong>? A job board, calendar, directory? We can create specifically-tailored integrations for your business.",
+    title: "Hosting and Maintenance",
+    text: "When we build your site we'll handle <strong>hosting</strong>, <strong>updates</strong>, and <strong>routine maintenance</strong> on your behalf.",
   },
   {
-    icon: "🔍",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
-  },
-  {
-    icon: "📦",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc.",
+    icon: "🤝",
+    title: "Human-focused",
+    text: "Whether it's an everyday email or a contract we keep things readable for humans. <strong>No jargon allowed</strong>!",
   },
 ] %}
 
 <section class="bg-gradient-to-b from-gray-100 to-white dark:bg-none spacer-py">
   <div class="container">
     <div class="text-balance text-navy dark:text-white md:text-center">
-      <h2 class="h1">What does Cakewalk make?</h2>
+      <h2 class="h1">What does Cakewalk offer?</h2>
       <h3 class="h3 highlighted mt-3">
         Best-in-class websites in a <em>simple</em> price structure.
       </h3>
@@ -39,15 +45,16 @@
         <div class="
           bg-white dark:bg-navy/30 shadow-xl shadow-gray-200/50 dark:shadow-black/10
           border border-gray-100 dark:border-navy
-          rounded-lg py-12 px-7
+          rounded-lg py-12 px-6
           {{ loop.index % 2 == 0 ? '-rotate-2' : 'rotate-2' }}
           transition-transform duration-300 hover:rotate-0
           flex items-center justify-center
         ">
-          <div class="text-center flex flex-col gap-3">
+          <div class="text-center flex flex-col">
             <span class="text-5xl lg:text-6xl">{{ feature.icon }}</span>
+            <h4 class="h5 mt-5 mb-1">{{ feature.title }}</h3>
             <p class="
-              text-xl text-balance
+              text-lg text-pretty
               text-gray-500 dark:text-gray-300
               [&_strong]:text-gray-700 [&_strong]:dark:text-white
               [&_a]:underline [&_a]:text-gray-700 [&_a]:dark:text-white [&_a]:font-bold
