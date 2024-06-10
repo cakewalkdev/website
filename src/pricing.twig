@@ -6,19 +6,20 @@ description: We offer extremely simple day-based pricing so that our cost is cle
 {% extends "_includes/layout.twig" %}
 
 {% block body %}
-  <div class="container-md dark:text-white spacer">
-    <div class="max-w-screen-sm">
-      <h1 class="h1">We keep our pricing clean and simple.</h1>
-      <h3 class="h3 font-normal highlighted mt-3 text-balance">
-        Our day rate for web work is <em>$400/day</em> and we offer half-day increments for smaller requests.
-      </h3>
-    </div>
-  </div>
   <section class="container-md dark:text-white spacer">
-    <div class="rich-text text-balance">
+    <div class="max-w-screen-sm">
+      <h1 class="h1">We keep our pricing <em>clean and simple</em>.</h1>
+    </div>
+
+    <div class="rich-text max-w-screen-md mt-12 md:mt-20">
+      <h2>What's our rate?</h2>
+      <p>
+        Our day rate for web work is <strong>$400/day</strong> and we offer half-day increments for smaller requests.
+      </p>
+
       <h2>How long will your project take?</h2>
       <p>
-        Well... that almost always is entirely up to you! Every project is unique and has different requirements and functionality.
+        Well&hellip;that almost always is entirely <strong>up to you</strong>! Every project is unique and has different requirements and functionality.
       </p>
       <p>
         Because of this, we simplify our quotes into line-itemized day-based quotes by feature.
@@ -28,22 +29,19 @@ description: We offer extremely simple day-based pricing so that our cost is cle
         and if those requirements or that feature changes, that's totally fine! We will just provide an
         updated day count to implement those changes for you.
       </p>
+
       <h2>But seriously, can you give me a ballpark?</h2>
-      <p>Absolutely! Here's a non-binding list of rough estimates for the types of websites we build on the regular.</p>
+      <p>
+        Absolutely! Here's a non-binding list of rough estimates for the types of websites we build on the regular.
+      </p>
       <ul>
         <li>CMS Build: <strong>20 days</strong></li>
         <li>Static Website: <strong>10 days</strong></li>
         <li>Design + CMS Build: <strong>30 days</strong></li>
         <li>Design + CMS Build + Custom Search Integration: <strong>35 days</strong></li>
       </ul>
-      <h2>Ready to get started?</h2>
-      <p>Hop on over to our contact page and we can get things rolling.</p>
-    </div>
-    <div class="pt-8">
-      <a class="button-green text-sm sm:text-base" href="/contact">
-        <span class="text-lg sm:text-2xl">👋</span>
-        Get Started
-      </a>
     </div>
   </section>
+
+  {% include "_includes/bottomCta.twig" %}
 {% endblock %}
