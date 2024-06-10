@@ -1,8 +1,8 @@
-// import Alpine from 'alpinejs'
+import Alpine from 'alpinejs'
+import { collapse } from '@alpinejs/collapse'
 
-// window.Alpine = Alpine
+Alpine.plugin(collapse)
 
-// // Start Alpine when the page is ready.
-// window.addEventListener('DOMContentLoaded', () => {
-//   Alpine.start()
-// })
+window.Alpine = Alpine
+
+Alpine.start()

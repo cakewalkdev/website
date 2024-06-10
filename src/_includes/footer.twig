@@ -1,8 +1,16 @@
 <footer class="bg-gradient-to-b from-gray-100 to-30% to-white dark:bg-none py-12 dark:border-t border-navy">
-	<div class="container-md gap-1 flex flex-col sm:flex-row items-center justify-center sm:justify-between">
-		<p class="dark:text-white font-bold text-xl">Cakewalk</p>
-		<p class="text-gray-500 dark:text-gray-400">
-			&copy; {{ now | date('Y') }}. All rights reserved.
-		</p>
+	<div class="container-md gap-6 flex flex-col md:flex-row items-center justify-center md:justify-between">
+		<div class="text-center md:text-left order-last md:order-first">
+			<p class="dark:text-white font-bold text-xl">Cakewalk</p>
+			<p class="text-gray-500 dark:text-gray-400">
+				&copy; {{ now | date('Y') }}. All rights reserved.
+			</p>
+		</div>
+		<div class="flex items-center gap-5">
+			<a href="/pricing" class="font-semibold underline hover:no-underline">Pricing</a>
+			<a href="/why-statamic" class="font-semibold underline hover:no-underline">Why Statamic?</a>
+			<a href="/agreement" class="font-semibold underline hover:no-underline">Agreement</a>
+			<a href="/contact" class="font-semibold underline hover:no-underline">Contact</a>
+		</div>
 	</div>
 </footer>
