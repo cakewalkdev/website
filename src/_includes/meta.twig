@@ -1,4 +1,4 @@
-{% set metaTitle = title ? title ~ " | " ~ global.siteName : global.siteName %}
+{% set metaTitle = title ?? global.title %}
 
 <title>{{ metaTitle }}</title>
 <meta name="description" content="{{ description ?? global.description }}">
