@@ -1,0 +1,14 @@
+/* Custom Base Styles Go Here. */
+html {
+  @apply antialiased font-sans font-normal scroll-smooth bg-white text-navy dark:bg-black-navy;
+}
+
+html,
+body {
+  @apply w-full h-full;
+}
+
+/* This allows you to hide Alpine DOM until it's ready to go. */
+[x-cloak] {
+  @apply hidden;
+}

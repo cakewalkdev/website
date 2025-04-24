@@ -1,8 +1,9 @@
 {
-  "name": "tea-stack",
+  "name": "cakewalk",
   "version": "1.0.0",
-  "description": "A starter template for the TEA stack.",
+  "description": "The codebase for the website of cakewalk.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "NODE_ENV=production npm-run-all clean -p build:*",
     "build:11ty": "eleventy --quiet",
@@ -12,10 +13,6 @@
     "dev:11ty": "eleventy --quiet --serve",
     "dev:vite": "vite",
     "format": "prettier ./src/**/*.{pcss,js} --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mattwaler/tea-stack.git"
   },
   "prettier": {
     "semi": false,
@@ -29,27 +26,20 @@
     "eleventy",
     "alpine"
   ],
-  "author": "Matt Waler",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mattwaler/tea-stack/issues"
-  },
-  "homepage": "https://github.com/mattwaler/tea-stack#readme",
+  "author": "cakewalkdev",
   "dependencies": {
-    "@alpinejs/collapse": "^3.14.0",
-    "alpinejs": "^3.1.0"
+    "@alpinejs/collapse": "^3.14.9",
+    "alpinejs": "^3.14.9"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@factorial/eleventy-plugin-twig": "^0.1.2",
-    "@tailwindcss/forms": "^0.5.2",
-    "autoprefixer": "^10.4.14",
+    "@11ty/eleventy": "^3.0.0",
+    "@factorial/eleventy-plugin-twig": "^0.2.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/vite": "^4.1.4",
     "npm-run-all": "^4.1.5",
-    "postcss-import": "^16.0.0",
-    "prettier": "^3.3.0",
-    "tailwindcss": "^3.1.6",
-    "tailwindcss-debug-screens": "^2.2.1",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.4",
     "twig": "^1.15.4",
-    "vite": "^5.0.13"
+    "vite": "^6.3.3"
   }
 }
