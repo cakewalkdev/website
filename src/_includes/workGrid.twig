@@ -32,28 +32,28 @@
       {% for feature in features %}
         <a href="{{ feature.link }}" target="_blank" class="
           bg-white shadow-xl shadow-gray-200/50
+          text-center
           border border-gray-100
           rounded-lg overflow-hidden
           {{ loop.index % 2 == 0 ? 'md:-rotate-2' : 'md:rotate-2' }}
           transition-transform duration-300 hover:rotate-0
-          flex items-center justify-center
         ">
+          <img src="{{ feature.image }}" alt="" class="w-full object-cover">
+          <div class="p-8">
+            <h3 class="h4">
+              {{ feature.title }}
+            </h3>
+            <p class="
+              mt-1
+              md:text-lg text-balance
+              text-gray-500
+              [&_strong]:text-gray-700 [&_strong]:
+              [&_a]:underline [&_a]:text-gray-700 [&_a]: [&_a]:font-bold
+            ">
+              {{ feature.text }}
+            </p>
+          </div>
           <div class="text-center flex flex-col">
-            <img src="{{ feature.image }}" alt="" class="w-full object-cover">
-            <div class="p-8">
-              <h3 class="h4">
-                {{ feature.title }}
-              </h3>
-              <p class="
-                mt-1
-                md:text-lg text-balance
-                text-gray-500
-                [&_strong]:text-gray-700 [&_strong]:
-                [&_a]:underline [&_a]:text-gray-700 [&_a]: [&_a]:font-bold
-              ">
-                {{ feature.text }}
-              </p>
-            </div>
           </div>
         </a>
       {% endfor %}
