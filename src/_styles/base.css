@@ -1,6 +1,6 @@
 /* Custom Base Styles Go Here. */
 html {
-  @apply antialiased font-sans font-normal scroll-smooth bg-white text-navy dark:bg-black-navy;
+  @apply antialiased font-sans font-normal scroll-smooth bg-white text-navy;
 }
 
 html,

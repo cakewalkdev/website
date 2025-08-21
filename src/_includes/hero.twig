@@ -13,13 +13,13 @@
   },
 ] %}
 
-<section class="container-md text-navy dark:text-white spacer">
+<section class="container-md text-navy  spacer">
   <h1 class="h1 highlighted text-balance">Your website doesn't have to be hard. Make it a <em>cakewalk</em>! 🍰</h1>
   <p class="h4 mt-16 mb-6">Does this sound familiar?</p>
   <div class="flex flex-col gap-6 max-w-screen-md">
     {% for quote in quotes %}
-      <blockquote class="flex items-center gap-6 text-lg md:text-2xl text-gray-600 dark:text-white">
-        <div class="text-balance [&_strong]:text-navy [&_strong]:dark:text-green">
+      <blockquote class="flex items-center gap-6 text-lg md:text-2xl text-gray-600 ">
+        <div class="text-balance [&_strong]:text-navy">
           <p>{{ quote.text }}</p>
         </div>
         <cite class="not-italic text-3xl md:text-5xl order-first">{{ quote.icon }}</cite>
