@@ -9,7 +9,7 @@
     image: "/images/repeaters.webp",
     title: "Repeaters",
     link: "https://repeaters.mattwaler.com",
-    text: "A landing page for recurring task tracking app on the iOS app store.",
+    text: "A landing page AND iOS app for recurring task tracking app on the iOS app store.",
   },
   {
     image: "/images/kingscourt.webp",
@@ -18,6 +18,13 @@
     text: "A local landscaping company offering a variety of premium services.",
   },
 ] %}
+
+  {# {
+    image: "/images/cicolator.webp",
+    title: "Cicolator",
+    link: "https://featherhour.com/cicolator/",
+    text: "A landing page AND iOS app for tracking daily calorie intake.",
+  }, #}
 
 <section class="bg-gradient-to-t from-gray-100 to-white spacer-py">
   <div class="container">
@@ -34,6 +41,7 @@
           bg-white shadow-xl shadow-gray-200/50
           text-center
           border border-gray-100
+          max-w-xl mx-auto
           rounded-lg overflow-hidden
           {{ loop.index % 2 == 0 ? 'md:-rotate-2' : 'md:rotate-2' }}
           transition-transform duration-300 hover:rotate-0
