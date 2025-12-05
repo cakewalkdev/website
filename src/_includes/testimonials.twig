@@ -73,7 +73,7 @@
 	<div class="pt-12 lg:pt-24">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 			{% for testimonial in testimonials %}
-				<div class="flex items-start gap-6">
+				<div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="{{ loop.index }}00">
 					<a href="{{ testimonial.url }}" target="_blank" class="relative hover:-translate-y-2 transition-transform hidden sm:block">
             <div class="absolute -bottom-1.5 -left-1.5 size-7 bg-gray-100 text-navy rounded-full flex flex-col justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="size-3.5" viewBox="0 0 24 24">
