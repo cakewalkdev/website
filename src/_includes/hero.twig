@@ -18,7 +18,7 @@
   <p class="h4 mt-16 mb-6">Does this sound familiar?</p>
   <div class="flex flex-col gap-6 max-w-screen-md">
     {% for quote in quotes %}
-      <blockquote class="flex items-center gap-6 text-lg md:text-2xl text-gray-600 ">
+      <blockquote data-aos="fade-up" data-aos-delay="{{ loop.index * 2 }}00" class="flex items-center gap-6 text-lg md:text-2xl text-gray-600 ">
         <div class="text-balance [&_strong]:text-navy">
           <p>{{ quote.text }}</p>
         </div>
@@ -27,7 +27,7 @@
     {% endfor %}
   </div>
   <div class="mt-12">
-    <a href="/contact/" class="button md:text-xl">
+    <a href="/contact/" class="button md:text-xl" data-aos="fade-up" data-aos-delay="800">
       <span class="text-2xl">👋</span>
       Yes, this is me. Please help.
     </a>

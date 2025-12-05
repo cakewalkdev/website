@@ -1,3 +1,4 @@
+@import "aos/dist/aos.css";
 @import 'tailwindcss' source('../../src');
 @import './base.css' layer(base);
 @import './typography.css' layer(base);
