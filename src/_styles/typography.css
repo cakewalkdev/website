@@ -1,14 +1,35 @@
-/* Emphasis */
-.h1 em {
-  @apply not-italic underline underline-offset-8 decoration-green decoration-[6px];
+@utility h1 {
+  @apply font-anton text-4xl md:text-5xl lg:text-6xl;
 }
 
+@utility h2 {
+  @apply font-anton text-3xl md:text-4xl lg:text-5xl;
+}
+
+@utility h3 {
+  @apply font-anton text-2xl md:text-3xl lg:text-4xl;
+}
+
+@utility h4 {
+  @apply font-anton text-lg md:text-xl lg:text-2xl;
+}
+
+@utility h5 {
+  @apply font-anton md:text-lg lg:text-xl;
+}
+
+@utility h6 {
+  @apply font-anton lg:text-lg;
+}
+
+/* Emphasis */
+.h1 em,
 .h2 em,
 .h3 em,
 .h4 em,
 .h5 em,
 .h6 em {
-  @apply not-italic underline underline-offset-8 decoration-green decoration-4;
+  @apply not-italic;
 }
 
 .rich-text {
